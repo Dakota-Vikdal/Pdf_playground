@@ -1,6 +1,6 @@
 import PyPDF2
 
-# We want to grab the merged pdf files as well as the watermark file and combine them.
+# We want to grab the merged.pdf file as well as the watermark file and combine them.
 merged = PyPDF2.PdfFileReader(open('merged.pdf', 'rb'))
 watermark = PyPDF2.PdfFileReader(open('wtr.pdf', 'rb'))
 output = PyPDF2.PdfFileWriter()
