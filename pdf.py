@@ -11,3 +11,5 @@ for i in range(merged.getNumPages()):
     page.mergePage(watermark.getPage(0))
     output.addPage(page)
     
+    with open('watermarked_files.pdf', 'wb') as file:
+        output.write(file)
